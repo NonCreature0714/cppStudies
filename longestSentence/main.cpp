@@ -12,6 +12,11 @@
 
 
 const char SPACE = ' ';
+
+bool isSpace(char c){
+    return c == SPACE;
+}
+
 bool isPunctuation(char c){
     switch (c) {
         case '.':
@@ -32,9 +37,7 @@ bool isPunctuation(char c){
     }
 }
 
-bool isSpace(char c){
-    return c == SPACE;
-}
+
 
 bool isEndOfString(char c1, char c2){
     return isalpha(c1) &&  c2 == '\0';
@@ -87,8 +90,8 @@ int solution(std::string &S){
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::vector<std::string> sentences;
-    sentences.push_back("We test coders. Try us!");
-    sentences.push_back("Stop CVs.. x x. Use us");
+    sentences.push_back("What is code? What you write!");
+    sentences.push_back("No stars.. x x. City lights");
     sentences.push_back(".....");
     //std::cout << "Hello, World!\n" << std::endl;
     for(auto s: sentences){
